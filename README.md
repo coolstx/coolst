@@ -1,6 +1,6 @@
-# Erdenebayar Uilstuguldur Portfolio
+# coolst
 
-Static personal portfolio website ready for GitHub Pages.
+Personal portfolio website for Erdenebayar Uilstuguldur.
 
 ## Local Preview
 
@@ -16,17 +16,15 @@ http://127.0.0.1:5177/
 
 ## Deploy With GitHub Pages
 
-1. Create a new GitHub repository.
-2. Upload or push all files from this folder to the repository root.
-3. Go to repository `Settings` -> `Pages`.
-4. Under `Build and deployment`, choose `GitHub Actions`.
-5. Push to the `main` branch.
-6. Wait for the `Deploy static portfolio to GitHub Pages` action to finish.
+1. Go to repository `Settings` -> `Pages`.
+2. Under `Build and deployment`, choose `GitHub Actions`.
+3. Push to the `main` branch.
+4. Wait for the `Deploy static portfolio to GitHub Pages` action to finish.
 
-Your site will be available at:
+The site will be available at:
 
 ```text
-https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/
+https://coolstx.github.io/coolst/
 ```
 
 ## Files
