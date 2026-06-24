@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Эрдэнэбаяр Үйлстөгөлдөр | Portfolio</title>
+    <meta
+      name="description"
+      content="Эрдэнэбаяр Үйлстөгөлдөрийн кибер аюулгүй байдал, fullstack хөгжүүлэлт, алгоритм болон төслийн portfolio."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Нүүр хэсэг рүү очих">
+        <span class="brand-mark">
+          <img src="assets/brand-avatar.jpg" alt="" />
+        </span>
+        <span data-i18n="brand">Үйлстөгөлдөр</span>
+      </a>
+      <div class="availability-pill">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span data-i18n="availability">Төсөлд нээлттэй</span>
+      </div>
+      <div class="header-actions">
+        <nav class="nav" aria-label="Үндсэн цэс">
+          <a href="#about" data-i18n="navAbout">Тухай</a>
+          <a href="#work" data-i18n="navWork">Төслүүд</a>
+          <a href="#skills" data-i18n="navSkills">Чадвар</a>
+          <a href="#proof" data-i18n="navProof">Амжилт</a>
+          <a href="#profiles" data-i18n="navProfiles">Профайл</a>
+          <a href="#contact" data-i18n="navContact">Холбоо</a>
+        </nav>
+        <div class="control-group" aria-label="Theme and language controls">
+          <button class="language-toggle" type="button" aria-label="Switch language" data-lang="mn">
+            MN
+          </button>
+          <div class="palette-control">
+            <button class="palette-toggle" type="button" aria-label="Color theme сонгох" aria-expanded="false">
+              <span class="palette-dot"></span>
+            </button>
+            <div class="palette-panel" aria-label="Color themes">
+              <button type="button" data-palette="default">
+                <span class="swatch default"></span>
+                <span>Gold Teal</span>
+              </button>
+              <button type="button" data-palette="cyber">
+                <span class="swatch cyber"></span>
+                <span>Cyber Green</span>
+              </button>
+              <button type="button" data-palette="ocean">
+                <span class="swatch ocean"></span>
+                <span>Ocean Cyan</span>
+              </button>
+              <button type="button" data-palette="violet">
+                <span class="swatch violet"></span>
+                <span>Violet Pink</span>
+              </button>
+              <button type="button" data-palette="mono">
+                <span class="swatch mono"></span>
+                <span>Minimal Gray</span>
+              </button>
+            </div>
+          </div>
+          <button class="theme-toggle" type="button" aria-label="Dark mode солих" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Танилцуулга">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">Сурагч • Cybersecurity • Fullstack • Algorithms</p>
+          <h1 data-i18n="heroName">Эрдэнэбаяр Үйлстөгөлдөр</h1>
+          <p class="hero-copy" data-i18n="heroCopy">
+            Би кибер аюулгүй байдал, fullstack хөгжүүлэлт, алгоритмын бодлого бодолтод
+            төвлөрдөг сурагч. Систем, автоматжуулалт, browser extension зэрэг бодит
+            хэрэглээнд ойр бүтээгдэхүүн бүтээх дуртай.
+          </p>
+          <div class="hero-actions" aria-label="Үндсэн үйлдлүүд">
+            <a class="button primary" href="#work" data-i18n="viewProjects">Төслүүд үзэх</a>
+            <a class="button secondary" href="mailto:uilstuguldur@mail.com" data-i18n="emailMe">Имэйл бичих</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section intro">
+        <div>
+          <p class="section-kicker" data-i18n="aboutKicker">Тухай</p>
+          <h2 data-i18n="aboutTitle">Аюулгүй, хурдан, хэрэглэгчдэд ойлгомжтой шийдэл бүтээхийг зорьдог.</h2>
+        </div>
+        <div class="intro-body">
+          <p data-i18n="aboutCopy">
+            Намайг Эрдэнэбаярын Үйлстөгөлдөр гэдэг. Би сурагч бөгөөд кибер аюулгүй
+            байдал, fullstack хөгжүүлэлт, algorithm competitive problem solving чиглэлээр
+            өөрийгөө хөгжүүлж байна. Веб систем, автоматжуулалтын хэрэгсэл, browser
+            extension зэрэг бодит хэрэглээнд ойр төслүүд дээр ажилладаг.
+          </p>
+          <div class="terminal-card" aria-label="Developer terminal">
+            <div class="terminal-top">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">uilstuguldur.dev</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> <span class="terminal-command" data-terminal-key="terminalOne"></span></p>
+              <p><span class="prompt">$</span> <span class="terminal-command" data-terminal-key="terminalTwo"></span></p>
+              <p><span class="prompt">$</span> <span class="terminal-command" data-terminal-key="terminalThree"></span><span class="terminal-caret"></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="workKicker">Сонгосон ажлууд</p>
+          <h2 data-i18n="workTitle">Төслүүд</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span>01</span>
+              <span data-i18n="projectOneType">Fullstack систем</span>
+            </div>
+            <h3 data-i18n="projectOneTitle">Сургуулийн удирдлага, тайлангийн цогц систем</h3>
+            <p data-i18n="projectOneCopy">
+              Сургуулийн багш, сурагч, эцэг эхийг холбож өгсөн удирдлага болон
+              тайлангийн систем. Мэдээлэл дамжуулалт, хэрэглэгчийн үүрэг, тайлан харах
+              урсгалыг нэг дор цэгцлэх зорилготой.
+            </p>
+            <div class="tag-row project-tags" aria-label="School system tech stack">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Database</span>
+              <span>Dashboard</span>
+              <span>Google Apps Script</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>02</span>
+              <span data-i18n="projectTwoType">Automation</span>
+            </div>
+            <h3 data-i18n="projectTwoTitle">Яриаг текст болгон автоматаар шивэх програм</h3>
+            <p data-i18n="projectTwoCopy">
+              Ярьсан яриаг текст болгон хөрвүүлж, курсор байрлаж байгаа хэсэгт
+              автоматаар шивэх хэрэгсэл. Бичих хурдыг нэмэгдүүлэх, өдөр тутмын ажлыг
+              хөнгөвчлөх автоматжуулалт дээр төвлөрсөн.
+            </p>
+            <div class="tag-row project-tags" aria-label="Speech typing tech stack">
+              <span>Python</span>
+              <span>Speech-to-text</span>
+              <span>Automation</span>
+              <span>Whisper</span>
+              <span>Chimege</span>
+              <span>Desktop utility</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>03</span>
+              <span data-i18n="projectThreeType">Browser extension</span>
+            </div>
+            <h3 data-i18n="projectThreeTitle">Шатрын анализ, зөвлөмжийн extension</h3>
+            <p data-i18n="projectThreeCopy">
+              Chess.com, Lichess.org зэрэг шатрын хуудсан дээр боломжит нүүдэл,
+              зөвлөмж, анализ харуулах олон үйлдэлт extension. Сургалт, анализ,
+              туршилтын зориулалттай browser хэрэгсэл болгон хөгжүүлсэн.
+            </p>
+            <div class="tag-row project-tags" aria-label="Chess extension tech stack">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Chess Engine</span>
+              <span>Browser API</span>
+              <span>DOM automation</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skill-band">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="skillsKicker">Чадвар</p>
+          <h2 data-i18n="skillsTitle">Технологи ба чиглэлүүд</h2>
+        </div>
+        <ul class="skill-list" aria-label="Ур чадварууд">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>React</li>
+          <li>Cybersecurity</li>
+          <li>Fullstack development</li>
+          <li>Algorithm solving</li>
+          <li>Browser extensions</li>
+        </ul>
+      </section>
+
+      <section id="proof" class="section proof-section">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="proofKicker">Амжилт ба нотолгоо</p>
+          <h2 data-i18n="proofTitle">Эрэмбэ, badge, certificate</h2>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-card featured-proof">
+            <span class="proof-label">Sphere Online Judge</span>
+            <h3>SPOJ RGB7 ranking</h3>
+            <p data-i18n="spojCopy">
+              RGB7 ranking дээр 575.00 оноотойгоор 3-р байрт бичигдсэн. Энэ нь
+              алгоритмын бодлого бодох хурд, тогтмол бэлтгэл, шийдэл олох чадварыг
+              харуулдаг.
+            </p>
+            <div class="proof-stats">
+              <span><strong>#3</strong> Rank</span>
+              <span><strong>575.00</strong> Score</span>
+            </div>
+          </article>
+
+          <article class="proof-card">
+            <span class="proof-label">HackerRank</span>
+            <h3 data-i18n="badgesTitle">Badges</h3>
+            <p data-i18n="badgesCopy">
+              HackerRank дээр Problem Solving болон C++ badge авсан. Энэ нь алгоритмын
+              сэтгэлгээ, C++ хэлний суурь, бодлогыг задлан шийдэх чадварыг харуулна.
+            </p>
+            <div class="tag-row">
+              <span>Problem Solving</span>
+              <span>C++</span>
+            </div>
+          </article>
+
+          <article class="proof-card">
+            <span class="proof-label">HackerRank</span>
+            <h3 data-i18n="certTitle">Certifications</h3>
+            <p data-i18n="certCopy">
+              Python Basic, CSS Basic, Problem Solving Basic certificate-үүд баталгаажсан.
+              Эдгээр нь Python scripting, web styling, алгоритмын үндсэн ойлголтын
+              суурийг харуулдаг.
+            </p>
+            <div class="tag-row">
+              <span>Python Basic</span>
+              <span>CSS Basic</span>
+              <span>Problem Solving Basic</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="profiles" class="section profiles-section">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="profilesKicker">Профайл</p>
+          <h2 data-i18n="profilesTitle">Coding болон social links</h2>
+        </div>
+        <div class="profile-grid">
+          <a class="profile-button" href="https://github.com/coolstx" target="_blank" rel="noreferrer">
+            <span class="profile-mark">
+              <img src="assets/logos/github.svg" alt="" />
+            </span>
+            <span>
+              <strong>GitHub</strong>
+              <small>@coolstx</small>
+            </span>
+          </a>
+          <a class="profile-button" href="https://www.hackerrank.com/profile/uilswxrd" target="_blank" rel="noreferrer">
+            <span class="profile-mark">
+              <img src="assets/logos/hackerrank.svg" alt="" />
+            </span>
+            <span>
+              <strong>HackerRank</strong>
+              <small>@uilswxrd</small>
+            </span>
+          </a>
+          <a class="profile-button" href="https://spoj.com/RGB7/ranks2/" target="_blank" rel="noreferrer">
+            <span class="profile-mark">
+              <img src="assets/logos/spoj.svg" alt="" />
+            </span>
+            <span>
+              <strong>SPOJ</strong>
+              <small>RGB7 ranking</small>
+            </span>
+          </a>
+          <a class="profile-button" href="https://www.instagram.com/coolxst" target="_blank" rel="noreferrer">
+            <span class="profile-mark">
+              <img src="assets/logos/instagram.svg" alt="" />
+            </span>
+            <span>
+              <strong>Instagram</strong>
+              <small>@coolxst</small>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <p class="section-kicker" data-i18n="contactKicker">Холбоо барих</p>
+          <h2 data-i18n="contactTitle">Хамтран ажиллах, төсөл ярилцахад нээлттэй.</h2>
+        </div>
+        <div class="contact-panel">
+          <div class="contact-action">
+            <a href="mailto:uilstuguldur@mail.com">uilstuguldur@mail.com</a>
+            <button class="copy-email" type="button" data-copy="uilstuguldur@mail.com" data-i18n="copyEmail">
+              Copy
+            </button>
+          </div>
+          <a href="tel:+97690999879">+976 90999879</a>
+          <a href="mailto:uilstuguldur@mail.com?subject=CV%20request" data-i18n="requestCv">CV хүсэх</a>
+          <a href="https://github.com/coolstx" target="_blank" rel="noreferrer">GitHub / coolstx</a>
+          <a href="https://www.instagram.com/coolxst" target="_blank" rel="noreferrer">Instagram / coolxst</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> <span data-i18n="footerName">Эрдэнэбаяр Үйлстөгөлдөр</span></span>
+      <button class="footer-action print-portfolio" type="button" data-i18n="printPortfolio">
+        Хэвлэх
+      </button>
+      <a href="#top" data-i18n="backTop">Дээш очих</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-i18n="copiedToast">Имэйл хуулагдлаа</div>
+    <script src="script.js"></script>
+  </body>
+</html>
