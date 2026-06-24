@@ -170,6 +170,8 @@ async function typeTerminal(dictionary) {
   const runId = ++terminalRunId;
   const commands = ["terminalOne", "terminalTwo", "terminalThree"];
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const compactPointer = window.matchMedia("(pointer: coarse)").matches;
+  const compactViewport = window.matchMedia("(max-width: 820px)").matches;
 
   terminalCommands.forEach((command) => {
     command.textContent = "";
@@ -180,7 +182,7 @@ async function typeTerminal(dictionary) {
     const text = dictionary[commands[index]] || "";
     if (!element) continue;
 
-    if (reduceMotion) {
+    if (reduceMotion || compactPointer || compactViewport) {
       element.textContent = text;
       continue;
     }
@@ -294,16 +296,21 @@ applyLanguage(savedLanguage);
 const savedPalette = getStoredValue("portfolio-palette") || "default";
 applyPalette(savedPalette);
 
-let cursorFrame = 0;
-document.addEventListener("pointermove", (event) => {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+const enablePointerGlow =
+  !window.matchMedia("(prefers-reduced-motion: reduce)").matches &&
+  !window.matchMedia("(pointer: coarse)").matches &&
+  !window.matchMedia("(max-width: 820px)").matches;
 
-  window.cancelAnimationFrame(cursorFrame);
-  cursorFrame = window.requestAnimationFrame(() => {
-    document.body.style.setProperty("--cursor-x", `${event.clientX}px`);
-    document.body.style.setProperty("--cursor-y", `${event.clientY}px`);
+let cursorFrame = 0;
+if (enablePointerGlow) {
+  document.addEventListener("pointermove", (event) => {
+    window.cancelAnimationFrame(cursorFrame);
+    cursorFrame = window.requestAnimationFrame(() => {
+      document.body.style.setProperty("--cursor-x", `${event.clientX}px`);
+      document.body.style.setProperty("--cursor-y", `${event.clientY}px`);
+    });
   });
-});
+}
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {

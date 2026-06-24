@@ -1078,11 +1078,17 @@ body.dark .proof-label {
 }
 
 @media (max-width: 820px) {
+  body::before,
+  .cursor-glow {
+    display: none;
+  }
+
   .site-header {
     position: absolute;
     align-items: flex-start;
     flex-direction: column;
     min-height: auto;
+    backdrop-filter: none;
   }
 
   .header-actions {
@@ -1108,6 +1114,7 @@ body.dark .proof-label {
 
   .hero-media {
     background-position: 58% center;
+    transform: none;
   }
 
   .hero-overlay {
@@ -1125,6 +1132,26 @@ body.dark .proof-label {
 
   .project-card {
     min-height: 250px;
+  }
+
+  .reveal {
+    transform: translateY(14px);
+    filter: none;
+    transition-duration: 320ms;
+  }
+
+  .section,
+  .project-card,
+  .proof-card,
+  .skill-list li,
+  .profile-button,
+  .contact-action,
+  .contact-panel a {
+    transition-duration: 180ms;
+  }
+
+  .palette-panel {
+    backdrop-filter: none;
   }
 }
 
