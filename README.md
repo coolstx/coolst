@@ -17,9 +17,10 @@ http://127.0.0.1:5177/
 ## Deploy With GitHub Pages
 
 1. Go to repository `Settings` -> `Pages`.
-2. Under `Build and deployment`, choose `GitHub Actions`.
-3. Push to the `main` branch.
-4. Wait for the `Deploy static portfolio to GitHub Pages` action to finish.
+2. Under `Build and deployment`, choose `Deploy from a branch`.
+3. Under `Branch`, choose `gh-pages` and `/ (root)`.
+4. Click `Save`.
+5. Wait a few minutes for GitHub Pages to publish.
 
 The site will be available at:
 
