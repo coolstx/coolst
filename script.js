@@ -59,7 +59,7 @@ const copy = {
     proofKicker: "Амжилт ба нотолгоо",
     proofTitle: "Эрэмбэ, badge, certificate",
     spojCopy:
-      "RGB7 ranking дээр 575.00 оноотойгоор 3-р байрт бичигдсэн. Энэ нь алгоритмын бодлого бодох хурд, тогтмол бэлтгэл, шийдэл олох чадварыг харуулдаг.",
+      "RGB7 ranking дээр 582.00 оноотойгоор 1-р байрт бичигдсэн. Энэ нь алгоритмын бодлого бодох хурд, тогтмол бэлтгэл, шийдэл олох чадварыг харуулдаг.",
     badgesTitle: "Badges",
     badgesCopy:
       "HackerRank дээр Problem Solving болон C++ badge авсан. Энэ нь алгоритмын сэтгэлгээ, C++ хэлний суурь, бодлогыг задлан шийдэх чадварыг харуулна.",
@@ -71,7 +71,6 @@ const copy = {
     contactKicker: "Холбоо барих",
     contactTitle: "Хамтран ажиллах, төсөл ярилцахад нээлттэй.",
     copyEmail: "Хуулах",
-    requestCv: "CV хүсэх",
     copiedToast: "Имэйл хуулагдлаа",
     footerName: "Эрдэнэбаяр Үйлстөгөлдөр",
     backTop: "Дээш очих",
@@ -121,7 +120,7 @@ const copy = {
     proofKicker: "Proof and achievements",
     proofTitle: "Rankings, Badges & Certifications",
     spojCopy:
-      "Ranked #3 on the RGB7 leaderboard with a score of 575.00, showing consistent algorithm practice and fast problem-solving ability.",
+      "Ranked #1 on the RGB7 leaderboard with a score of 582.00, showing consistent algorithm practice and fast problem-solving ability.",
     badgesTitle: "Badges",
     badgesCopy:
       "Earned HackerRank badges in Problem Solving and C++, highlighting algorithmic thinking, C++ fundamentals, and structured problem-solving skill.",
@@ -133,7 +132,6 @@ const copy = {
     contactKicker: "Contact",
     contactTitle: "Open to collaboration, projects, and technical conversations.",
     copyEmail: "Copy",
-    requestCv: "Request CV",
     copiedToast: "Email copied",
     footerName: "Erdenebayar Uilstuguldur",
     backTop: "Back to top",
